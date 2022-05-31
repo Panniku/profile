@@ -1,2 +1,2 @@
 # profile
-my profile card make in "carrd" style with html, css and some js
+my profile card made in "carrd" style with html, css and some js
