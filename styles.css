@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    font-family: 'Roboto Mono';
+}
+
+body {
+    background-color: #060A14;
+    display: grid;
+    place-items: center;
+    margin-top: 140px;
+}
+
+.main {
+    height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+
+    width: 100%;
+    min-width: 650px;
+    max-width: 650px;
+
+    border: 2px solid #232D3B;
+    background-color: #192534;
+
+    overflow: hidden;
+}
+
+.main .topHeader {
+    display: flex;
+    float: left;
+
+    height: 30px;
+    width: fit-content;
+}
+
+/* topHeader 's items */
+.topHeader div {
+    display: flex;
+    float: left;
+
+    color: white;
+    font-size: medium;
+    background: rgba(100, 100, 100, 0.2);
+    transition: all 0.2s ease;
+
+    text-align: left;
+    overflow: hidden;
+
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.topHeader div span {
+    padding: 2px 2px;
+    text-decoration: none;
+    padding-top: 2px;
+    user-select: none;
+}
+
+.topHeader div:hover {
+    background: rgba(100, 100, 100, 0.4);
+    transition: all 0.2s ease;
+}
+
+.controls {
+    display: flex;
+    float: right;
+    overflow: hidden;
+
+    color: white;
+    user-select: none;
+
+    transition: all 0.2s ease;
+
+    align-items: center;
+}
+
+.controls div {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.controls div:hover {
+    background: rgba(100, 100, 100, 0.4);
+    transition: all 0.2s ease;
+}
+
+.controls .close:hover {
+    background: rgba(255, 0, 0, 0.8);
+    transition: all 0.2s ease;
+}
+
+.urlBar {
+    position: relative;
+    overflow: hidden;
+
+    background-color: rgba(100, 100, 100, 0.4);
+    height: 30px;
+    width: 100%;
+}
+
+.contentWrapper {
+    position: relative;
+    overflow: hidden;
+
+    background-color: #192534;
+    height: 340px;
+    width: 100%;
+
+    top: 2px;
+}
+
+
+
+/* home content */
+.contentWrapper .homeContent {
+    display: flex;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    background-color: #090F1F;
+}
+
+.contentWrapper .homeContent .content {
+    height: 340px;
+    width: 100%;
+}
+
+
+.contentWrapper .homeContent .content .myIcon {
+    height: 214px;
+    width: 214px;
+    border: 2px solid white;
+}
+
+.contentWrapper .homeContent .content .socials {
+    color: white;
+    width: 218px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.contentWrapper .homeContent .content .socials tr td {
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+}
+
+.contentWrapper .homeContent .content .socials tr td a {
+    text-decoration: underline;
+    color: white;
+}
+
+.contentWrapper .homeContent .content .socials tr .githubText {
+    font-size: x-small;
+}
+
+.contentWrapper .homeContent .content .socials tr .discordUsername {
+    font-size: x-small;
+}
+
+
+
+
+
+
+.contentWrapper .homeContent .about {
+    height: 340px;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+.contentWrapper .homeContent .info {
+    height: 340px;
+    width: 100%;
+    background-color: lightskyblue;
+}
+
+
+
+
+
+
+
+.contentWrapper .commsContent {
+    position: absolute;
+    overflow: hidden;
+
+    height: 100%;
+    width: 100%;
+    background-color: #090F1F;
+}
+
+.contentWrapper .commsContent div {
+    color: white;
+    text-align: center;
+}
+
+
+
+
+.contentWrapper .rulesContent {
+    position: absolute;
+    overflow: hidden;
+
+    height: 100%;
+    width: 100%;
+    background-color: #090F1F;
+}
+
+.contentWrapper .rulesContent div {
+    color: white;
+    text-align: center;
+}
+
+/* copyright */
+.panniku {
+    position: relative;
+    color: white;
+    opacity: 0.4;
+    bottom: 22.4px;
+    left: 2px;
+    font-size: small;
+}
+
+.panniku .c {
+    font-size: large;
+}
