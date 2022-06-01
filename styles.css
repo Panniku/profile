@@ -70,15 +70,13 @@ body {
 
     color: white;
     user-select: none;
-
-    transition: all 0.2s ease;
-
     align-items: center;
 }
 
 .controls div {
     padding-left: 5px;
     padding-right: 5px;
+    transition: all 0.2s ease;
 }
 
 .controls div:hover {
@@ -124,10 +122,10 @@ body {
 }
 
 .contentWrapper .homeContent .content {
-    height: 340px;
+    height: 334px;
     width: 100%;
+    border: 2px solid white;
 }
-
 
 .contentWrapper .homeContent .content .myIcon {
     height: 214px;
@@ -164,17 +162,40 @@ body {
 
 
 
-
+/* about content */
 .contentWrapper .homeContent .about {
-    height: 340px;
+    height: 334px;
     width: 100%;
-    background-color: lightgreen;
+    border: 2px solid white;
+    overflow-y: hidden;
 }
 
+.contentWrapper .homeContent .about .someInformation {
+    color: white;
+    padding: 5px;
+    font-size: smaller;
+}
+
+
+/* info content */
 .contentWrapper .homeContent .info {
-    height: 340px;
+    height: 334px;
     width: 100%;
-    background-color: lightskyblue;
+    border: 2px solid white;
+}
+
+.contentWrapper .homeContent .info .infoText {
+    color: white;
+    padding: 5px;
+    font-size: smaller;
+    border: 2px solid white;
+}
+
+.contentWrapper .homeContent .info .infoRandom {
+    color: white;
+    padding: 5px;
+    font-size: smaller;
+    border: 2px solid white;
 }
 
 
@@ -194,7 +215,7 @@ body {
 
 .contentWrapper .commsContent div {
     color: white;
-    text-align: right;
+    text-align: center;
 }
 
 
@@ -226,4 +247,5 @@ body {
 
 .panniku .c {
     font-size: large;
+    padding-left: 2px;
 }
