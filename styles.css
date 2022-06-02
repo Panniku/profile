@@ -21,6 +21,8 @@ body {
     min-width: 650px;
     max-width: 650px;
 
+    padding-right: -30px;
+
     border: 2px solid #232D3B;
     background-color: #192534;
 
@@ -413,9 +415,7 @@ body {
 }
 
 .zoomWarning {
-    width: 100%;
     color: white;
-    text-align: left;
-    margin-left: 150px;
+    text-align: center;
     font-size: x-small;
 }
