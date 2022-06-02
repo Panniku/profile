@@ -9,6 +9,7 @@ body {
     display: grid;
     place-items: center;
     margin-top: 140px;
+    user-select: none;
 }
 
 .main {
@@ -37,7 +38,6 @@ body {
 /* topHeader 's items */
 .topHeader div {
     display: flex;
-    float: left;
 
     color: white;
     font-size: medium;
@@ -90,13 +90,87 @@ body {
 }
 
 .urlBar {
-    position: relative;
-    overflow: hidden;
-
+    display: flex;
     background-color: rgba(100, 100, 100, 0.4);
     height: 30px;
     width: 100%;
 }
+
+.urlBar .urlBarControls {
+    display: flex;
+    float: left;
+    color: gray;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+.urlBar .urlBarControls .pageBack {
+    padding-right: 2px;
+    padding-top: 2px;
+}
+
+.urlBar .urlBarControls .pageForward {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+}
+
+.urlBar .urlBarControls .pageReload {
+    color: white;
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+.urlBar .urlBarControls .pageToHome {
+    color: white;
+    padding-left: 2px;
+    padding-right: 5px;
+    padding-top: 2px;
+}
+
+.urlBar .urlBarContent {
+    display: flex;
+    height: 25px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    margin-top: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+}
+
+.urlBar .urlBarContent .barHTTPInfo {
+    padding-right: 5px;
+    float: left;
+}
+
+.urlBar .urlBarContent .barText {
+    padding-top: 2px;
+    float: left;
+}
+
+.urlBar .urlBarContent .barFlag {
+    width: 100%;
+    text-align: right;
+}
+
+.urlBar .sideControls {
+    display: flex;
+    float: right;
+    color: white;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+
+
+
+
 
 .contentWrapper {
     position: relative;
@@ -159,9 +233,6 @@ body {
 }
 
 
-
-
-
 /* about content */
 .contentWrapper .homeContent .about {
     height: 334px;
@@ -200,47 +271,138 @@ body {
 
 
 
-
-
-
-
+/* comms content */
 .contentWrapper .commsContent {
     position: absolute;
     overflow: hidden;
+    display: flex;
 
     height: 100%;
     width: 100%;
     background-color: #090F1F;
 }
 
-.contentWrapper .commsContent div {
-    color: white;
-    text-align: center;
+.contentWrapper .commsContent .gfxPlans {
+    position: relative;
+    height: 334px;
+    width: 100%;
+    border: 2px solid white;
 }
 
+.contentWrapper .commsContent .gfxPlans .gfxExamples {
+    height: 177.75px;
+    width: 316px;
+    border: 2px solid white;
+}
+
+.contentWrapper .commsContent .gfxPlans .gfxText {
+    color: white;
+    padding-left: 5px;
+    border: 2px solid white;
+}
+
+.contentWrapper .commsContent .gfxPlans .gfxText .gfxAdHeader {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.contentWrapper .commsContent .gfxPlans .gfxText .gfxAdContent {
+    font-size: 12px;
+}
+
+.contentWrapper .commsContent .artPlans {
+    position: relative;
+    height: 334px;
+    width: 100%;
+    border: 2px solid white;
+}
+
+.contentWrapper .commsContent .artPlans .artExamples {
+    height: 177.75px;
+    width: 316px;
+    border: 2px solid white;
+}
+
+.contentWrapper .commsContent .artPlans .artText {
+    color: white;
+    padding-left: 5px;
+    border: 2px solid white;
+}
+
+.contentWrapper .commsContent .artPlans .artText .artAdHeader {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.contentWrapper .commsContent .artPlans .artText .artAdContent {
+    font-size: 12px;
+}
 
 
 
 .contentWrapper .rulesContent {
     position: absolute;
     overflow: hidden;
+    display: flex;
 
     height: 100%;
     width: 100%;
     background-color: #090F1F;
 }
 
-.contentWrapper .rulesContent div {
+.contentWrapper .rulesContent .commRuleSection {
+    height: 334px;
+    width: 100%;
+
     color: white;
-    text-align: center;
+    border: 2px solid white;
 }
+
+.contentWrapper .rulesContent .commRuleSection .commRuleHeader {
+    display: block;
+    height: fit-content;
+    width: 316.6px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.contentWrapper .rulesContent .commRuleSection .commRuleText {
+    display: flex;
+    font-size: smaller;
+    padding: 5px;
+}
+
+.contentWrapper .rulesContent .workRuleSection {
+    height: 334px;
+    width: 100%;
+
+    color: white;
+    border: 2px solid white;
+}
+
+.contentWrapper .rulesContent .workRuleSection .workRuleHeader {
+    display: block;
+    height: fit-content;
+    width: 316.6px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.contentWrapper .rulesContent .workRuleSection .workRuleText {
+    display: flex;
+    font-size: smaller;
+    padding: 5px;
+}
+
+
+
 
 /* copyright */
 .panniku {
     position: relative;
     color: white;
     opacity: 0.4;
-    bottom: 22.4px;
+    bottom: 23.4px;
     left: 2px;
     font-size: small;
 }
